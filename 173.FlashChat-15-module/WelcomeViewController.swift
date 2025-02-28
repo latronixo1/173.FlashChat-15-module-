@@ -11,6 +11,15 @@ class WelcomeViewController: UIViewController {
 
     // MARK: - UI
     
+    private lazy var titleLabel: UILabel = {
+        let element = UILabel()
+        element.textColor = UIColor(named: K.BrandColors.blue)
+        element.font = .systemFont(ofSize: 50, weight: .black)
+        
+        element.translatesAutoresizingMaskIntoConstraints = false
+        return element
+    }()
+    
     // MARK: - Life Cycle
     
     
@@ -26,6 +35,7 @@ class WelcomeViewController: UIViewController {
     private func setViews() {
         view.backgroundColor = .white
 
+        view.addSubview(titleLabel)
     }
 }
 
