@@ -4,11 +4,12 @@
 //
 //  Created by Валентин Картошкин on 01.03.2025.
 //
+import UIKit
 
 struct K {
-    static let appName = "FlashChat"
+    static let appName = "⚡️FlashChat"
     static let logInName = "Войти"
-    static let register = "Зарегистрироваться"
+    static let registerName = "Зарегистрироваться"
     static let emailName = "Email"
     static let passwordName = "Пароль"
     
@@ -21,6 +22,11 @@ struct K {
         static let lightPurple = "BrandLightPurple"
         static let blue = "BrandBlue"
         static let lightBlue = "BrandLightBlue"
+    }
+    
+    struct Size {
+        static let buttonSize: CGFloat = 48
+        static let buttonOffset: CGFloat = 8
     }
     
     struct FStore {
