@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6BAA3A5D2D7261F8000DD764 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6BAA3A5C2D7261F8000DD764 /* SnapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6BAA3A2B2D7256CD000DD764 /* 173.FlashChat-15-module.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "173.FlashChat-15-module.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BAA3A5D2D7261F8000DD764 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = "173.FlashChat-15-module";
 			packageProductDependencies = (
+				6BAA3A5C2D7261F8000DD764 /* SnapKit */,
 			);
 			productName = "173.FlashChat-15-module";
 			productReference = 6BAA3A2B2D7256CD000DD764 /* 173.FlashChat-15-module.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 6BAA3A222D7256CD000DD764;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6BAA3A5B2D7261F8000DD764 /* XCLocalSwiftPackageReference "../../SnapKit-develop" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6BAA3A2C2D7256CD000DD764 /* Products */;
 			projectDirPath = "";
@@ -343,6 +352,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		6BAA3A5B2D7261F8000DD764 /* XCLocalSwiftPackageReference "../../SnapKit-develop" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../SnapKit-develop";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6BAA3A5C2D7261F8000DD764 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6BAA3A232D7256CD000DD764 /* Project object */;
 }
