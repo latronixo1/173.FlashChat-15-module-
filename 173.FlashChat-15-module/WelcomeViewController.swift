@@ -41,18 +41,19 @@ class WelcomeViewController: UIViewController {
        
         setViews()
         setupConstraints()
+        animationText()
     }
 
     // MARK: - Set Views
     
     private func setViews() {
         view.backgroundColor = .white
+        navigationController?.navigationBar.tintColor = .systemYellow   //изменим цвет кнопки Back в navigationController
 
         view.addSubview(titleLabel)
         view.addSubview(logInButton)
         view.addSubview(registerButton)
         
-        titleLabel.text = K.appName
         registerButton.setTitle(K.registerName, for: .normal)
         logInButton.setTitle(K.logInName, for: .normal)
         
@@ -61,8 +62,26 @@ class WelcomeViewController: UIViewController {
 
     }
     
+    //при помощи этой функции создается анимация набора текста "⚡️FlashChat"
+    private func animationText() {
+        titleLabel.text = ""
+        let titleText = K.appName
+        
+        for letter in titleText.enumerated() {
+            Timer.scheduledTimer(withTimeInterval: 0.1 * Double(letter.offset), repeats: false) { _ in
+                self.titleLabel.text! += String(letter.element)
+            }
+        }
+    }
+    
     @objc private func buttonsTapped (_ sender: UIButton) {
         let nextVC = RegisterViewController()
+        
+        if sender.currentTitle == K.registerName {
+            nextVC.authorizationType = .register
+        } else if sender.currentTitle == K.logInName {
+            nextVC.authorizationType = .logIn 
+        }
         
         navigationController?.pushViewController(nextVC, animated: true)
     }
