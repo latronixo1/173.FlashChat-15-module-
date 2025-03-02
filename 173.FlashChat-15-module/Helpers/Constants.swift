@@ -13,6 +13,10 @@ struct K {
     static let emailName = "Email"
     static let passwordName = "Пароль"
     
+    static let enterButtonImageName = "paperplane.fill"
+    static let enterMessagePlaceholder = "Напишите сообщение"
+    
+    //идентификатор ячейки в UITableView (ни на что не влияет, просто по нему будем к ней обращаться и переиспользовать)
     static let cellIdentifier = "MessageCell"
     
     static let textFieldImageName = "textField"
